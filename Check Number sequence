@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+int n,currNum,prevNum;
+    //"is dec" is used to keep a check on flow of series 
+bool isDec=true;
+cin>>n;
+cin>>prevNum;
+for(int i=1;i<n;i++)
+{
+cin>>currNum;
+if(currNum>prevNum){
+isDec=false;
+}
+    else if(currNum<prevNum)
+    {
+        if(!isDec){
+        cout<<"false";
+         return 0;
+    }
+}
+    else if(prevNum==currNum){
+    cout<<"false";
+    return 0;
+}
+   prevNum=currNum;
+}
+  cout<<"true";
+}
