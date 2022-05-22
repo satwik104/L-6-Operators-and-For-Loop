@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    
+    /*
+        // "/" gives quitent
+cout<<2/10<<endl;
+cout<<10/2<<endl;
+// "%" gives remender
+/*
+2%10=2 
+2/10=0.2 
+0*10=0 
+2-0=2;
+*/
+    /*
+cout<<2%10<<endl;
+cout<<10%2<<endl;
+    */
+	int n,i,reverse=0,remender;
+    cin>>n;
+    for(i=1;n!=0;i++)
+    {
+        remender=n%10;//this will give the last digit of the number
+        reverse=reverse*10+remender;
+        n=n/10;
+    }
+cout<<reverse;	
+}
