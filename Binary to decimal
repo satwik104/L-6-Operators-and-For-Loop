@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int i,n,pv=1,ans=0,rem;
+    cin>>n;
+    for(i=1;n!=0;i++)
+    {
+        rem=n%10;
+        ans=ans+rem*pv;
+       pv= pv*2;
+        n=n/10;
+    }
+	cout<<ans;
+}
