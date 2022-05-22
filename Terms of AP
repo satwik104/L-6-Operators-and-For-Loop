@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int i,n,count=0,print;
+    cin>>n;
+    for(i=1;count<n;i++)
+    {
+        print=3*i+2;
+        if(print%4!=0)
+        {
+          cout<<print<<" ";
+       	 count++;  
+        } 
+    }
+	
+}
